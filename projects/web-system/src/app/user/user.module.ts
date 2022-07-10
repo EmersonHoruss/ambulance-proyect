@@ -1,19 +1,26 @@
-import { NgModule } from '@angular/core';
+// ANGULAR
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
+// ANGULAR MATERIAL
+
+// APP
 import { UserRoutingModule } from './user-routing.module';
-import { PageListComponent } from './views/pages/page-list/page-list.component';
+import { SharedModule } from '../shared/shared.module';
 import { FormComponent } from './views/components/form/form.component';
-
+import { PageListComponent } from './views/pages/page-list/page-list.component';
 
 @NgModule({
-  declarations: [
-    PageListComponent,
-    FormComponent
-  ],
+  declarations: [FormComponent, PageListComponent],
   imports: [
+    // ANGULAR
     CommonModule,
-    UserRoutingModule
-  ]
+    UserRoutingModule,
+
+    // ANGULAR MATERIAL
+
+    // APP
+    SharedModule,
+  ],
 })
-export class UserModule { }
+export class UserModule {}

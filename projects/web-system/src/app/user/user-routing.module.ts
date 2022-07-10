@@ -4,7 +4,7 @@ import { PageListComponent } from './views/pages/page-list/page-list.component';
 
 const routes: Routes = [
   {
-    path: 'list',
+    path: '',
     component: PageListComponent,
   },
 ];

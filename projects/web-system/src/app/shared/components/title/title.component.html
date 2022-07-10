@@ -1,0 +1,19 @@
+<section class="title">
+  <section class="info">
+    <mat-icon>
+      <ng-content select="[icon]"></ng-content>
+    </mat-icon>
+
+    <h2>
+      <ng-content select="[title]"></ng-content>
+    </h2>
+  </section>
+
+  <section class="buttons">
+    <section class="restoreButton">
+      <ng-content select="[restoreButton]"></ng-content>
+    </section>
+
+    <ng-content select="[addButton]"></ng-content>
+  </section>
+</section>

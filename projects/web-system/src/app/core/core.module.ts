@@ -1,16 +1,16 @@
 // ANGULAR
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 // ANGULAR MATERIAL
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 // APP
-import { SidebarComponent } from './views/components/sidebar/sidebar.component';
 import { HeaderComponent } from './views/components/header/header.component';
+import { SidebarComponent } from './views/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [HeaderComponent, SidebarComponent],
@@ -19,11 +19,11 @@ import { HeaderComponent } from './views/components/header/header.component';
     CommonModule,
 
     // ANGULAR MATERIAL
-    MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    
+    MatToolbarModule,
+
     // APP
   ],
   exports: [HeaderComponent, SidebarComponent],
