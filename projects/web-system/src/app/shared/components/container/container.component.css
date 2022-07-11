@@ -1,0 +1,11 @@
+.own-container {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: calc(100vh - 145px - 3rem);
+}
+
+mat-card {
+  flex-basis: 95%;
+}
