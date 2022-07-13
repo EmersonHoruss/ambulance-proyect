@@ -18,6 +18,7 @@
   font-family: Inter;
   color: rgb(30, 41, 59) !important;
   line-height: 5rem;
+  padding-left: 1rem;
 }
 
 .info mat-icon {

@@ -1,0 +1,25 @@
+.mat-list-item-content {
+  padding: 0 !important;
+}
+
+mat-list-item .main-menu-item {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+mat-list-item .main-menu-item:hover,
+mat-list-item .activated-item {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: #272e3f; */
+}
+
+.main-menu-item-title {
+  padding-left: 1rem;
+}
