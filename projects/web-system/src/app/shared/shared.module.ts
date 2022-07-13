@@ -6,16 +6,19 @@ import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 // APP
 import { TitleComponent } from './components/title/title.component';
 import { ContainerComponent } from './components/container/container.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     // APP
     TitleComponent,
     ContainerComponent,
+    TableComponent,
   ],
   imports: [
     // ANGULAR
@@ -24,6 +27,7 @@ import { ContainerComponent } from './components/container/container.component';
     // ANGULAR MATERIAL
     MatCardModule,
     MatIconModule,
+    MatTableModule,
 
     // APP
   ],
@@ -36,7 +40,8 @@ import { ContainerComponent } from './components/container/container.component';
 
     // APP
     TitleComponent,
-     ContainerComponent,
+    ContainerComponent,
+    TableComponent,
   ],
 })
 export class SharedModule {}

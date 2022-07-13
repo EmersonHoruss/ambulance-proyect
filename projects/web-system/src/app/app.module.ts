@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './garbage/test/test.component';
+import { IconService } from './shared/services/icon/icon.service';
 
 @NgModule({
   declarations: [AppComponent, TestComponent],
@@ -29,4 +30,6 @@ import { TestComponent } from './garbage/test/test.component';
 
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private readonly iconService: IconService) {}
+}
