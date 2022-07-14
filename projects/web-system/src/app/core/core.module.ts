@@ -1,6 +1,6 @@
 // ANGULAR
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 // ANGULAR MATERIAL
 import { MatButtonModule } from '@angular/material/button';
@@ -52,5 +52,6 @@ import { PageLoginComponent } from './views/pages/page-login/page-login.componen
     MenuComponent,
     SidebarComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class CoreModule {}

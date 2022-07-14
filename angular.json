@@ -26,7 +26,9 @@
               "projects/web-system/src/custom-theme.scss",
               "projects/web-system/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,9 +92,7 @@
               "projects/web-system/src/favicon.ico",
               "projects/web-system/src/assets"
             ],
-            "styles": [
-              "projects/web-system/src/styles.css"
-            ],
+            "styles": ["projects/web-system/src/styles.css"],
             "scripts": []
           }
         }
