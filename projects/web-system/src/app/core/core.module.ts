@@ -14,6 +14,7 @@ import { HeaderComponent } from './views/components/header/header.component';
 import { SidebarComponent } from './views/components/sidebar/sidebar.component';
 import { MenuComponent } from './views/components/menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { PageLoginComponent } from './views/pages/page-login/page-login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     MenuComponent,
     SidebarComponent,
+    PageLoginComponent,
   ],
   imports: [
     // ANGULAR

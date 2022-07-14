@@ -13,6 +13,8 @@ import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './garbage/test/test.component';
 import { IconService } from './shared/services/icon/icon.service';
+import { MatPaginatorIntl } from '@angular/material/paginator';
+import { PaginatorService } from './shared/services/paginator/paginator.service';
 
 @NgModule({
   declarations: [AppComponent, TestComponent],
@@ -21,15 +23,15 @@ import { IconService } from './shared/services/icon/icon.service';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    
+
     // ANGULAR MATERIAL
     BrowserAnimationsModule,
     MatSidenavModule,
-    
+
     // APP
     CoreModule,
   ],
-
+  providers: [{ provide: MatPaginatorIntl, useClass: PaginatorService }],
   bootstrap: [AppComponent],
 })
 export class AppModule {

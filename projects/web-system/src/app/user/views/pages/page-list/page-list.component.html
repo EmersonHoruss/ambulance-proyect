@@ -1,8 +1,4 @@
 <uwu-title>
-  <span title>User</span>
-
-  <span icon>dashboard</span>
-
   <button mat-mini-fab addButton color="primary">
     <mat-icon>add</mat-icon>
   </button>
@@ -13,5 +9,8 @@
 </uwu-title>
 
 <uwu-container>
-  <uwu-table></uwu-table>
+  <perfect-scrollbar class="height-max-perfect-scrollbar">
+    <uwu-table [metaDataFields]="metaDataFields" [dataSource]="dataSource"></uwu-table>
+  </perfect-scrollbar>
+  <uwu-paginator [length]="length" [pageSize]="pageSize"(onChangePage)="getRecordsByPage($event)" ></uwu-paginator>
 </uwu-container>

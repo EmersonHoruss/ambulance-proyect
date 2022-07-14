@@ -21,6 +21,10 @@ export class IconService {
       url: '../assets/icons/history.svg',
     },
     {
+      name: 'logo',
+      url: '../assets/icons/logo.svg',
+    },
+    {
       name: 'medic',
       url: '../assets/icons/medic.svg',
     },
