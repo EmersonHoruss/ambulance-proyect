@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageLoginComponent } from './core/views/pages/page-login/page-login.component';
+import { TestComponent } from './garbage/test/test.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: PageLoginComponent },
+  { path: '', component: PageLoginComponent },
+  { path: 'dashboard', component: TestComponent },
   {
     path: 'user',
     loadChildren: () =>

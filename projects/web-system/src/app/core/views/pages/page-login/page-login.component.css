@@ -1,5 +1,10 @@
 .page-login {
-  width: 100vw;
   height: 100vh;
-  background-color: red;
+  /* width: 100vw; */
+}
+
+.left {
+  background-image: url("/assets/img/backgrounds/leftLoginPage.jpeg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }

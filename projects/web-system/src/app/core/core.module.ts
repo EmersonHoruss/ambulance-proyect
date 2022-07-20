@@ -9,6 +9,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+// FLEX LAYOUT MODULE
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 // APP
 import { HeaderComponent } from './views/components/header/header.component';
 import { SidebarComponent } from './views/components/sidebar/sidebar.component';
@@ -39,6 +42,9 @@ import { PageLoginComponent } from './views/pages/page-login/page-login.componen
     MatListModule,
     MatMenuModule,
     MatToolbarModule,
+
+    // FLEX LAYOUT MODULE
+    FlexLayoutModule,
 
     // APP
   ],

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LayoutService } from './config/injections/layout/layout.service';
+import { LayoutInterface } from './config/injections/layout/layout.interface';
 
 @Component({
   selector: 'uwu-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isOpenedMenu: boolean = true;
+  layout!: LayoutInterface;
+
+  constructor(private readonly layoutService: LayoutService) {
+    this.layoutService
+      .getLayout()
+      .subscribe((layout: LayoutInterface) => (this.layout = layout));
+  }
 }

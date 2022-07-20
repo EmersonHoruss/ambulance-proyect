@@ -10,11 +10,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 // APP
 import { CoreModule } from './core/core.module';
+import { LayoutModule } from './config/injections/layout/layout.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './garbage/test/test.component';
 import { IconService } from './shared/services/icon/icon.service';
-import { MatPaginatorIntl } from '@angular/material/paginator';
+ import { MatPaginatorIntl } from '@angular/material/paginator';
 import { PaginatorService } from './shared/services/paginator/paginator.service';
+import { layoutConstant } from './config/injections/layout/layout.constant';
 
 @NgModule({
   declarations: [AppComponent, TestComponent],
@@ -29,6 +31,7 @@ import { PaginatorService } from './shared/services/paginator/paginator.service'
     MatSidenavModule,
 
     // APP
+    LayoutModule.foorRoot(layoutConstant),
     CoreModule,
   ],
   providers: [{ provide: MatPaginatorIntl, useClass: PaginatorService }],
