@@ -4,7 +4,9 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 // ANGULAR MATERIAL
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -18,6 +20,7 @@ import { SidebarComponent } from './views/components/sidebar/sidebar.component';
 import { MenuComponent } from './views/components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { PageLoginComponent } from './views/pages/page-login/page-login.component';
+import { LoginComponent } from './views/components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ import { PageLoginComponent } from './views/pages/page-login/page-login.componen
     MenuComponent,
     SidebarComponent,
     PageLoginComponent,
+    LoginComponent,
   ],
   imports: [
     // ANGULAR
@@ -38,7 +42,9 @@ import { PageLoginComponent } from './views/pages/page-login/page-login.componen
 
     // ANGULAR MATERIAL
     MatButtonModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     MatMenuModule,
     MatToolbarModule,
