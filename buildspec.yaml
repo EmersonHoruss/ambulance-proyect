@@ -1,0 +1,27 @@
+version: "0.2"
+phases:
+  install:
+    runtime-version:
+      nodejs: 14
+    pre_build:
+      commands:
+        - echo "/***** INSTALING PACKAGES *****\"
+        - npm i
+    build:
+      commands:
+        - echo "/***** STARTING COMPILATION *****\"
+        - npm run build:prod
+    post_build:
+      commands:
+        - echo "/***** CLEANING BUCKET *****\"
+        - aws s3 rm s3://ambulance-app --recursive
+        - echo "/***** LOADING TRANSPILATION IN BUCKET *****\"
+        - aws s3 sync ./dist/web-system s3://ambulance-app --delete
+        - echo "/***** FORCING UPDATES FROM CLOUDFRONT *****\"
+        - aws cloudfront create-invalidation --distribution-id E2GLESLPUJPW7F --paths '/*'
+
+artifacts:
+  name: "AngularBuildOutput"
+  files:
+    - "**/*"
+  base-directory: "dist/web-system"

@@ -4,7 +4,13 @@
 }
 
 .left {
-  background-image: url("/assets/img/backgrounds/leftLoginPage.jpeg");
+  background-image: url("/assets/img/backgrounds/leftLoginPage1.jpeg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+lottie-player {
+  margin-right: 22.5rem;
+  margin-top: 5rem;
 }

@@ -1,15 +1,19 @@
 <section fxLayout fxLayoutAlign="space-between" class="page-login">
-  <section class="left" fxFlex="1 1 70%">
+  <section class="left" fxFlex="1 1 70%" fxLayoutAlign="center center">
     <lottie-player
       src="../assets/lotties/ambulance.json"
       background="transparent"
-      speed="1.25"
+      speed="1.1"
       loop
       autoplay
-      style="width:400px"
+      style="width: 380px; height: auto"
     >
     </lottie-player>
   </section>
 
-  <section class="right" fxFlex="1 1 30%">Right</section>
+  <section class="right" fxFlex="1 1 30%">
+    Right
+
+    <button (click)="navigate()">NAVIGATE</button>
+  </section>
 </section>
